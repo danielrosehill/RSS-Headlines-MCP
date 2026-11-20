@@ -1,0 +1,10 @@
+{
+  "feeds": [
+    {"key": "toi", "name": "Times of Israel", "url": "https://www.timesofisrael.com/feed/", "tags": ["israel", "en"]},
+    {"key": "jpost", "name": "Jerusalem Post", "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx", "tags": ["israel", "en"], "tz_override": "Asia/Jerusalem"},
+    {"key": "haaretz", "name": "Haaretz", "url": "https://www.haaretz.com/srv/haaretz-latest-headlines", "tags": ["israel", "en"]},
+    {"key": "jns", "name": "JNS", "url": "https://www.jns.org/index.rss", "tags": ["israel", "en"]},
+    {"key": "israelhayom", "name": "Israel Hayom", "url": "https://www.israelhayom.com/feed/", "tags": ["israel", "en"]},
+    {"key": "ynetnews", "name": "Ynetnews", "url": "https://www.ynetnews.com/Integration/StoryRss3082.xml", "default": false, "tags": ["israel", "en"]}
+  ]
+}

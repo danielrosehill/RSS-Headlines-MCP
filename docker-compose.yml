@@ -1,0 +1,14 @@
+# Generic deployment. Put your own feed list in ./feeds.json (copy src/rss_headlines_mcp/feeds.json)
+# and uncomment the volume + FEEDS_FILE lines to use it.
+services:
+  rss-headlines-mcp:
+    build: .
+    container_name: rss-headlines-mcp
+    restart: unless-stopped
+    environment:
+      - NEWS_TZ=${NEWS_TZ:-UTC}
+      # - FEEDS_FILE=/config/feeds.json
+    # volumes:
+    #   - ./feeds.json:/config/feeds.json:ro
+    ports:
+      - "127.0.0.1:${PORT:-8000}:8000"
